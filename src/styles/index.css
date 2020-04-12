@@ -1,5 +1,10 @@
-@tailwind base;
+a {
+  text-decoration: none;
+}
 
-@tailwind components;
-
-@tailwind utilities;
+.alert {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}

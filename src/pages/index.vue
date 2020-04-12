@@ -1,17 +1,17 @@
 <template>
-  <Layout>
-    <HelloWorld />
+  <Layout v-slot="slotProps">
+    <HomePage :handleToggleAlert="slotProps.handleToggleAlert" />
   </Layout>
 </template>
 
 <script>
-import HelloWorld from '../components/HelloWorld.vue'
-import Layout from '../components/layout'
+import HomePage from '../components/home-page.vue'
+import Layout from '../components/base-layout'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HomePage,
     Layout
   }
 }
